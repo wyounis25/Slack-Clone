@@ -11,7 +11,7 @@ import AppsIcon from '@material-ui/icons/Apps';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import SidebarOption from './SidebarOption';
+import SidebarOption from './sidebarOption'
 import AddIcon from '@material-ui/icons/Add';
 import db from './firebase';
 
