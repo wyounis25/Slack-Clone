@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "slack-clone",
+			"path": "../../../../../projects/social/slack/slack-clone"
+		}
+	],
+	"settings": {}
+}
