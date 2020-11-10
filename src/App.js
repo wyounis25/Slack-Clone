@@ -4,10 +4,11 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Chat from './Chat'
 import Login from './Login'
+import {useStateValue} from "./StateProvider"
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
-	const [user,setUser] = useState(null)
+	const [{user},dispatch] = useStateValue();
 	return (
 		<div className="App">
 			{/* REACT ROUTER -> CHAT SCREEN */}

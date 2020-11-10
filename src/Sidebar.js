@@ -14,8 +14,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SidebarOption from './sidebarOption'
 import AddIcon from '@material-ui/icons/Add';
 import db from './firebase';
+import { useStateValue } from './StateProvider';
 
 export default function Sidebar() {
+	const [{user}] = useStateValue()
+
 	//  const [state, setstate] = useState(initialState)
 	const [ channels, setChannels ] = useState([]);
 
@@ -39,7 +42,7 @@ export default function Sidebar() {
 					<h2>Walid's Bar</h2>
 					<h3>
 						<FiberManualRecordIcon />
-						Walid Younis
+						{user?.displayName}
 					</h3>
 				</div>
 				<CreateIcon />
